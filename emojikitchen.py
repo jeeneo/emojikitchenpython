@@ -4,7 +4,7 @@ import re
 from typing import List, Dict, Optional
 
 class EmojiKitchen:
-    def __init__(self, json_path: str = "emojikitchen.json"):
+    def __init__(self, json_path: str = "metadata.json"):
         with open(json_path, 'r', encoding='utf-8') as f:
             self.data = json.load(f)
         self.emoji_data = self.data.get("data", {})
